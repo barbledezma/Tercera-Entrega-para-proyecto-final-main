@@ -4,7 +4,7 @@ import TicketValidator from "./ticket.validator.js";
 
 class CartValidator{
     async createCart(){
-        const cart = await cartsDao.createCart();
+        const cart = await cartsDao.create();
         console.log(cart)
         return cart;
     }

@@ -5,7 +5,7 @@ export const isAdmin = (req, res, next) => {
 
     let user_role = req.user.role;
 
-    if(user_role == 'admin'){
+    if(user_role == 'Admin'){
         next();
     }else{
         res.status(403).json({message: 'Access Forbidden'})
